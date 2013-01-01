@@ -13,3 +13,6 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " reload .vimrc file
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+inoremap jk <esc>
+
