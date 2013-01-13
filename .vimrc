@@ -32,3 +32,5 @@ function ClosePair(char)
         return a:char
     endif
 endf
+
+colorscheme evening
