@@ -2,7 +2,7 @@ syntax on
 syntax enable
 
 " show line numbers
-set number
+set nu
 
 " in insert mode use <c-d> to delete current line
 inoremap <c-d> <esc>ddo
