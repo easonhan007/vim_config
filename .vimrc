@@ -2,7 +2,7 @@ syntax on
 syntax enable
 
 " show line numbers
-set nu
+set number
 
 " in insert mode use <c-d> to delete current line
 inoremap <c-d> <esc>ddo
@@ -59,3 +59,20 @@ set encoding=utf-8
 filetype indent on
 filetype plugin on
 filetype plugin indent on
+
+" for NERDTree
+noremap tw :NERDTree<cr> 
+
+" run python file quickly
+noremap <leader>p :!python %<cr>
+
+" run ruby file quickly
+noremap <leader>p :!ruby %<cr>
+
+" map ctrl- m for comments in python and ruby
+augroup commenter
+  autocmd!
+  autocmd FileType python noremap <c-m> I#<esc>
+  autocmd FileType ruby noremap <c-m> I#<esc>
+augroup END
+
