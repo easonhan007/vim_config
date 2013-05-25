@@ -67,7 +67,7 @@ noremap tw :NERDTree<cr>
 noremap <leader>p :!python %<cr>
 
 " run ruby file quickly
-noremap <leader>p :!ruby %<cr>
+noremap <leader>r :!ruby %<cr>
 
 " map ctrl- m for comments in python and ruby
 augroup commenter
