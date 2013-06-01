@@ -1,3 +1,18 @@
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" own plugin
+Bundle 'ctrlp.vim'
+Bundle 'AutoClose'
+Bundle 'ZenCoding.vim'
+Bundle 'EasyMotion'
+Bundle 'FencView.vim'
+Bundle 'The-NERD-Commenter'
+
 syntax on
 syntax enable
 
@@ -76,3 +91,4 @@ augroup commenter
   autocmd FileType ruby noremap <c-m> I#<esc>
 augroup END
 
+filetype plugin indent on     " required!
